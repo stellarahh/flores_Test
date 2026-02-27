@@ -576,7 +576,8 @@ add_event_lines(fig4)
 fig4.update_layout(**CHART_LAYOUT, title=dict(
     text="Indexed Growth (2015 = 100) — Log Scale",
     font=dict(family="Bebas Neue", size=18, color="#e8e8f0"), x=0.01
-), yaxis_title="Index (2015 = 100)", yaxis_type="log", height=420, legend=dict(
+), yaxis_title="Index (2015 = 100)", yaxis_type="log", height=420)
+fig4.update_layout(legend=dict(
     orientation="h", yanchor="bottom", y=1.02, xanchor="left", x=0
 ))
 fig4.update_xaxes(tickmode="linear", dtick=1)
